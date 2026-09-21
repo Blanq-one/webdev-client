@@ -6,7 +6,8 @@ export default function Lab1() {
       <HeadingTags />
       <div id="wd-your-heading">
         <h2>
-          Krish Nagaral — <span id="wd-your-span">Web Development</span>
+          yo this is krish and i love playing{" "}
+          <span id="wd-your-span">games</span>
         </h2>
       </div>
       <div id="wd-ai-headings">
