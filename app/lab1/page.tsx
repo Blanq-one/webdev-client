@@ -1,6 +1,7 @@
 import HeadingTags from "./HeadingTags";
 import ListTags from "./ListTags";
 import ParagraphTag from "./ParagraphTag";
+import Tables from "./Tables";
 
 export default function Lab1() {
   return (
@@ -38,6 +39,51 @@ export default function Lab1() {
           <li>All books by Agatha Christie, I&apos;m a big murder mystery fan.</li>
           <li>Murder on the Orient Express (my favorite one specifically).</li>
         </ul>
+      </div>
+      <div id="wd-your-table">
+        <h3>My Game Ratings</h3>
+        <table border={1} cellPadding={8}>
+          <thead>
+            <tr>
+              <th>Game</th>
+              <th>Genre</th>
+              <th>Rating (out of 10)</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Outlast</td>
+              <td>Horror</td>
+              <td>9.5</td>
+              <td>Good graphics</td>
+            </tr>
+            <tr>
+              <td>The Witcher 3</td>
+              <td>Action RPG</td>
+              <td>10</td>
+              <td>Good graphics</td>
+            </tr>
+            <tr>
+              <td>Assassin&apos;s Creed series</td>
+              <td>Action-Adventure</td>
+              <td>9</td>
+              <td>Great graphics</td>
+            </tr>
+            <tr>
+              <td>Ghost of Tsushima</td>
+              <td>Samurai / Action-Adventure</td>
+              <td>10</td>
+              <td>Top tier graphics</td>
+            </tr>
+            <tr>
+              <td>Black Myth: Wukong</td>
+              <td>Action RPG</td>
+              <td>8</td>
+              <td>Top tier graphics</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div id="wd-ai-headings">
         <h4>Lab notes</h4>
@@ -82,6 +128,7 @@ export default function Lab1() {
           of a line of text.
         </li>
       </ul>
+      <Tables />
     </div>
   );
 }
