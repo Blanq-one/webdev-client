@@ -1,4 +1,6 @@
+import Image from "next/image";
 import HeadingTags from "./HeadingTags";
+import Images from "./Images";
 import ListTags from "./ListTags";
 import ParagraphTag from "./ParagraphTag";
 import Tables from "./Tables";
@@ -129,6 +131,18 @@ export default function Lab1() {
         </li>
       </ul>
       <Tables />
+      <Images />
+      <div id="wd-your-image">
+        <Image src="/Krish.jpeg" width={300} height={400} alt="Krish Nagaral" />
+      </div>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        id="wd-ai-image"
+        src="https://picsum.photos/400/300"
+        width={400}
+        height={300}
+        alt="Sample AI placeholder image"
+      />
     </div>
   );
 }
