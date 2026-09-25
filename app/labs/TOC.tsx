@@ -27,7 +27,11 @@ export default function TOC() {
         <li>
           <Link href="/labs/lab5">Lab 5</Link>
         </li>
-        {/* Kambaz link goes here once that section is built */}
+        <li>
+          <Link href="/" id="wd-kambaz-link">
+            Kambaz
+          </Link>
+        </li>
         <li>
           <Link href="/book/ch1" id="wd-toc-book-link">
             Chapter 1
