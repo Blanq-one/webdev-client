@@ -33,6 +33,60 @@ export default function Lab2() {
         </p>
         <p id="wd-id-selector-3">But Sekiro is a much better game.</p>
       </div>
+      <div id="wd-css-class-selectors">
+        <h3>Class selectors</h3>
+        <p className="wd-class-selector">
+          Instead of using IDs to refer to elements, you can use an element&apos;s
+          CLASS attribute
+        </p>
+        <h4 className="wd-class-selector">
+          This heading has same style as paragraph above
+        </h4>
+        <p className="wd-ai-class-selector">
+          This paragraph and the heading below it share one sample class.
+        </p>
+        <h4 className="wd-ai-class-selector">
+          Same class, different tag, same look.
+        </h4>
+        <p className="wd-your-class">
+          Sekiro, Outlast, and The Witcher 3 are the games I keep coming back
+          to.
+        </p>
+        <h4 className="wd-your-class">
+          My own class styles this heading and the paragraph above it.
+        </h4>
+      </div>
+      <div id="wd-css-document-structure">
+        <div className="wd-selector-1">
+          <h3>Document structure selectors</h3>
+          <div className="wd-selector-2">
+            Selectors can be combined to refer elements in particular places in
+            the document
+            <p className="wd-selector-3">
+              This paragraph&apos;s red background is referenced as
+              <br />
+              .selector-2 .selector3
+              <br />
+              meaning the descendant of some ancestor.
+              <br />
+              <span className="wd-selector-4">
+                Whereas this span is a direct child of its parent
+              </span>
+              <br />
+              <span className="wd-ai-selector-5">
+                This sample span is another descendant.
+              </span>
+              <br />
+              <span className="wd-my-selector">
+                This span is my own extra direct child.
+              </span>
+              <br />
+              You can combine these relationships to create specific styles
+              depending on the document structure
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
