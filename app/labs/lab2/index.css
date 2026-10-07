@@ -1,1 +1,36 @@
-/* Lab 2 styles */
+/*
+#wd-lab2 p {
+  background-color: green;
+  color: white;
+}
+*/
+
+p#wd-id-selector-1 {
+  background-color: red;
+  color: white;
+}
+
+p#wd-id-selector-2 {
+  background-color: yellow;
+  color: black;
+}
+
+p#wd-id-selector-3 {
+  background-color: orange;
+  color: black;
+}
+
+p#wd-ai-id-selector {
+  background-color: lightblue;
+  color: black;
+}
+
+#wd-lab2 h3 {
+  background-color: teal;
+  color: white;
+}
+
+#wd-lab2 h2 {
+  background-color: navy;
+  color: white;
+}
