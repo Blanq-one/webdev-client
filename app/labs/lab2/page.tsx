@@ -48,13 +48,8 @@ export default function Lab2() {
         <h4 className="wd-ai-class-selector">
           Same class, different tag, same look.
         </h4>
-        <p className="wd-your-class">
-          Sekiro, Outlast, and The Witcher 3 are the games I keep coming back
-          to.
-        </p>
-        <h4 className="wd-your-class">
-          My own class styles this heading and the paragraph above it.
-        </h4>
+        <p className="wd-your-class">I like to watch animes.</p>
+        <h4 className="wd-your-class">I like Valorant as well.</h4>
       </div>
       <div id="wd-css-document-structure">
         <div className="wd-selector-1">
@@ -78,7 +73,7 @@ export default function Lab2() {
               </span>
               <br />
               <span className="wd-my-selector">
-                This span is my own extra direct child.
+                I like Bleach and Death Note.
               </span>
               <br />
               You can combine these relationships to create specific styles
