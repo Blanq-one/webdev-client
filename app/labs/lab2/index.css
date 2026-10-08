@@ -25,12 +25,12 @@ p#wd-ai-id-selector {
   color: black;
 }
 
-#wd-lab2 h3 {
+:where(#wd-lab2) h3 {
   background-color: teal;
   color: white;
 }
 
-#wd-lab2 h2 {
+:where(#wd-lab2) h2 {
   background-color: navy;
   color: white;
 }
@@ -68,4 +68,72 @@ p#wd-ai-id-selector {
 .wd-selector-2 > .wd-selector-3 > .wd-my-selector {
   background-color: black;
   color: white;
+}
+
+.wd-fg-color-black {
+  color: black;
+}
+
+.wd-fg-color-white {
+  color: white;
+}
+
+.wd-fg-color-blue {
+  color: #7070ff;
+}
+
+.wd-fg-color-red {
+  color: #ff7070;
+}
+
+.wd-fg-color-green {
+  color: green;
+}
+
+.wd-bg-color-yellow {
+  background-color: #ffff07;
+}
+
+.wd-bg-color-blue {
+  background-color: #7070ff;
+}
+
+.wd-bg-color-red {
+  background-color: #ff7070;
+}
+
+.wd-bg-color-green {
+  background-color: green;
+}
+
+.wd-bg-color-gray {
+  background-color: lightgray;
+}
+
+.wd-border-fat {
+  border-width: 20px 30px 20px 30px;
+}
+
+.wd-border-thin {
+  border-width: 4px;
+}
+
+.wd-border-solid {
+  border-style: solid;
+}
+
+.wd-border-dashed {
+  border-style: dashed;
+}
+
+.wd-border-yellow {
+  border-color: #ffff07;
+}
+
+.wd-border-red {
+  border-color: #ff7070;
+}
+
+.wd-border-blue {
+  border-color: #7070ff;
 }
