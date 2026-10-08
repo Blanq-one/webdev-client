@@ -3,6 +3,16 @@ export default function Labs() {
   return (
     <div id="wd-labs">
       <h1>Labs</h1>
+      <p>
+        <a
+          href="https://github.com/Blanq-one/webdev-client"
+          id="wd-github"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub repository
+        </a>
+      </p>
       <ul>
         <li>
           <Link href="/labs/lab1">Lab 1: HTML Examples</Link>
