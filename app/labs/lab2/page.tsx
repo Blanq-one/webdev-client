@@ -98,6 +98,12 @@ export default function Lab2() {
           </div>
         </div>
       </div>
+      <div id="wd-css-cascade">
+        <h3>CSS cascade</h3>
+        <p>Tag rule only: this paragraph matches just the tag rule, so it is green.</p>
+        <p id="wd-my-cascade" className="wd-my-cascade">I also watch tennis, it has really great and smart players.</p>
+        <p id="wd-ai-cascade" className="wd-ai-cascade">Sample paragraph with a tag rule, a class rule, and an id rule that all set the background color.</p>
+      </div>
       <ForegroundColors />
       <BackgroundColors />
       <Borders />

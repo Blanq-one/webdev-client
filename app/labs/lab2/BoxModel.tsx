@@ -27,6 +27,8 @@ export default function BoxModel() {
         <div id="wd-ai-box-sizing" className="wd-box-sizing-border">
           This sample box is border-box, so it stays at the declared width.
         </div>
+        {/* My width change: content-box adds padding and border on top of the declared 300px width, so this box measures 360px wide on screen. */}
+        <div className="wd-box-sizing-my">I like Roger Federer and Rafael Nadal.</div>
       </div>
     </div>
   );
