@@ -28,7 +28,8 @@ export default function KambazNavigation() {
         rel="noreferrer"
         className="block bg-black py-3 text-center text-sm text-white no-underline"
       >
-        Northeastern
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/neu.png" width={75} height={75} alt="Northeastern University" className="mx-auto" />
       </a>
       <Link
         href="/account"
