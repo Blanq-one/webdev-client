@@ -3,6 +3,7 @@ export default function Labs() {
   return (
     <div id="wd-labs">
       <h1>Labs</h1>
+      <p>Krish Nagaral</p>
       <p>
         <a
           href="https://github.com/Blanq-one/webdev-client"
@@ -30,7 +31,7 @@ export default function Labs() {
           <Link href="/labs/lab5">Lab 5</Link>
         </li>
         <li>
-          <Link href="/" id="wd-kambaz-link">
+          <Link href="/dashboard" id="wd-kambaz-link">
             Kambaz
           </Link>
         </li>

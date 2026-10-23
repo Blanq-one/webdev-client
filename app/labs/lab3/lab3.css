@@ -1,0 +1,15 @@
+.wd-bg-red { background-color: red; }
+.wd-bg-blue { background-color: blue; }
+.wd-bg-green { background-color: green; }
+.wd-bg-purple { background-color: purple; }
+.wd-bg-orange { background-color: orange; }
+.bg-gold { background-color: gold; }
+.wd-box {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+}
