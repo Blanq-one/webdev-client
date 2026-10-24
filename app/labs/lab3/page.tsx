@@ -28,6 +28,9 @@ export default function Lab3() {
       <Add a={3} b={4} />
       <Add a={10} b={20} />
 
+      <h3>Second Add (3.8)</h3>
+      <Add a={10} b={20} />
+
       <h3>Path Parameters (3.8.3)</h3>
       <ul>
         <li>
