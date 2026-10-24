@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "M101", "course": "1234", "name": "Week 1, Lecture 1 - Course Introduction, Syllabus, Agenda",
+    "lessons": [
+      { "_id": "L101", "name": "LEARNING OBJECTIVES", "items": ["Introduction to the course", "Learn what is Web Development"] },
+      { "_id": "L102", "name": "READING", "items": ["Full Stack Developer - Chapter 1 - Introduction", "Full Stack Developer - Chapter 2 - Creating User Interfaces"] },
+      { "_id": "L103", "name": "SLIDES", "items": ["Introduction to Web Development", "Creating an HTTP server with Node.js", "Creating a React Application"] },
+      { "_id": "L104", "name": "GEN Z SLANG LESSONS", "items": ["Rizz means charisma, as in how smooth someone is when they talk.", "No cap means no lie, as in \"I'm being serious.\""] },
+      { "_id": "L105", "name": "PRACTICE SLANG", "items": ["Use \"no cap\" and \"lowkey\" in two sentences of your own.", "Translate three slang words into plain English."] },
+      { "_id": "L106", "name": "GEN Z SLIDES", "items": ["Slang from the last five years, with examples", "Quiz: which word means something is great?"] }
+    ]
+  },
+  { "_id": "M102", "course": "1234", "name": "Week 2", "lessons": [ { "_id": "L107", "name": "LEARNING OBJECTIVES", "items": ["Learn how to create user interfaces with HTML"] } ] },
+  { "_id": "M103", "course": "1234", "name": "Week 3", "lessons": [ { "_id": "L108", "name": "LEARNING OBJECTIVES", "items": ["CSS Styling"] } ] },
+  { "_id": "M104", "course": "1234", "name": "Sample module (AI)", "lessons": [ { "_id": "L109", "name": "Sample lesson (AI)", "items": [] } ] },
+  {
+    "_id": "M201", "course": "2345", "name": "Week 1 - Node.js Basics",
+    "lessons": [
+      { "_id": "L201", "name": "LEARNING OBJECTIVES", "items": ["Run JavaScript outside the browser", "Understand the Node.js event loop"] },
+      { "_id": "L202", "name": "READING", "items": ["Node.js Docs - Getting Started", "Full Stack Developer - Chapter 5 - Node.js"] }
+    ]
+  },
+  {
+    "_id": "M202", "course": "2345", "name": "Week 2 - Express Servers",
+    "lessons": [
+      { "_id": "L203", "name": "LEARNING OBJECTIVES", "items": ["Create routes with Express", "Parse JSON request bodies"] },
+      { "_id": "L204", "name": "SLIDES", "items": ["HTTP methods and status codes", "Middleware in Express"] }
+    ]
+  },
+  { "_id": "M203", "course": "2345", "name": "Week 3 - REST APIs", "lessons": [ { "_id": "L205", "name": "LEARNING OBJECTIVES", "items": ["Design a REST API for Kambaz"] } ] }
+]

@@ -1,0 +1,7 @@
+[
+  { "_id": "1234", "name": "CS1234 React JS", "description": "Full Stack software developer", "image": "/images/reactjs.jpg" },
+  { "_id": "2345", "name": "CS2345 Node JS", "description": "Server side JavaScript", "image": "/images/nodejs.jpg" },
+  { "_id": "3456", "name": "CS3456 MongoDB", "description": "NoSQL Databases", "image": "/images/mongodb.jpg" },
+  { "_id": "6767", "name": "CS6767 ReactJS", "description": "This course is how we teach how to be a Gen Z.", "image": "/images/reactjs.jpg" },
+  { "_id": "CS9999", "name": "CS9999 Sample Course", "description": "Assistant-generated sample, not my course", "image": "/images/reactjs.jpg" }
+]

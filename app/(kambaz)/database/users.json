@@ -1,0 +1,14 @@
+[
+  { "_id": "u1", "firstName": "Tony", "lastName": "Stark", "loginId": "001234561S", "section": "S101", "role": "STUDENT", "lastActivity": "2020-10-01", "totalActivity": "10:21:32" },
+  { "_id": "u2", "firstName": "Bruce", "lastName": "Wayne", "loginId": "001234562S", "section": "S101", "role": "STUDENT", "lastActivity": "2020-11-02", "totalActivity": "23:32:23" },
+  { "_id": "u3", "firstName": "Steve", "lastName": "Rogers", "loginId": "001234563S", "section": "S101", "role": "STUDENT", "lastActivity": "2020-10-02", "totalActivity": "13:21:32" },
+  { "_id": "u4", "firstName": "Natasha", "lastName": "Romanoff", "loginId": "001234564S", "section": "S101", "role": "TA", "lastActivity": "2020-11-05", "totalActivity": "11:22:33" },
+  { "_id": "u5", "firstName": "Cristiano", "lastName": "Ronaldo", "loginId": "001234565S", "section": "S101", "role": "FACULTY", "lastActivity": "2020-10-07", "totalActivity": "09:15:40" },
+  { "_id": "u6", "firstName": "Tom", "lastName": "Cruise", "loginId": "001234566S", "section": "S101", "role": "TA", "lastActivity": "2020-11-08", "totalActivity": "17:44:10" },
+  { "_id": "u7", "firstName": "Novak", "lastName": "Djokovic", "loginId": "001234567S", "section": "S201", "role": "STUDENT", "lastActivity": "2020-10-09", "totalActivity": "12:05:55" },
+  { "_id": "u8", "firstName": "Jane", "lastName": "Sample", "loginId": "001234568S", "section": "S201", "role": "STUDENT", "lastActivity": "2020-10-10", "totalActivity": "08:30:00" },
+  { "_id": "u9", "firstName": "Alex", "lastName": "Sample", "loginId": "001234569S", "section": "S201", "role": "STUDENT", "lastActivity": "2020-11-11", "totalActivity": "14:20:15" },
+  { "_id": "u10", "firstName": "Sam", "lastName": "Sample", "loginId": "001234570S", "section": "S201", "role": "TA", "lastActivity": "2020-10-12", "totalActivity": "19:45:30" },
+  { "_id": "u11", "firstName": "Monkey D.", "lastName": "Luffy", "loginId": "001234571S", "section": "S201", "role": "STUDENT", "lastActivity": "2020-11-13", "totalActivity": "15:10:05" },
+  { "_id": "u12", "firstName": "Roronoa", "lastName": "Zoro", "loginId": "001234572S", "section": "S201", "role": "STUDENT", "lastActivity": "2020-11-14", "totalActivity": "06:45:50" }
+]

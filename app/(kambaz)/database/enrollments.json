@@ -1,0 +1,15 @@
+[
+  { "_id": "E1", "user": "u1", "course": "1234" },
+  { "_id": "E2", "user": "u2", "course": "1234" },
+  { "_id": "E3", "user": "u3", "course": "1234" },
+  { "_id": "E4", "user": "u4", "course": "1234" },
+  { "_id": "E5", "user": "u5", "course": "1234" },
+  { "_id": "E6", "user": "u6", "course": "1234" },
+  { "_id": "E7", "user": "u5", "course": "2345" },
+  { "_id": "E8", "user": "u7", "course": "2345" },
+  { "_id": "E9", "user": "u8", "course": "2345" },
+  { "_id": "E10", "user": "u9", "course": "2345" },
+  { "_id": "E11", "user": "u10", "course": "2345" },
+  { "_id": "E12", "user": "u11", "course": "2345" },
+  { "_id": "E13", "user": "u12", "course": "2345" }
+]

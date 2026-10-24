@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getAssignment } from "../../../../database";
 
 const inputClass = "w-full rounded border border-neutral-300 bg-white px-3 py-2 text-sm";
 const rowClass = "mb-3 flex items-start gap-4";
@@ -10,24 +12,26 @@ export default async function AssignmentEditor({
 }: {
   params: Promise<{ cid: string; aid: string }>;
 }) {
-  const { cid } = await params;
+  const { cid, aid } = await params;
+  const assignment = getAssignment(cid, aid);
+  if (!assignment) notFound();
   return (
     <div id="wd-assignments-editor" className="max-w-3xl">
       <div className="mb-3">
         <label htmlFor="wd-name" className="mb-1 block text-sm">Assignment Name</label>
-        <input id="wd-name" defaultValue="A1 - ENV + HTML" className={inputClass} />
+        <input id="wd-name" defaultValue={assignment.title} className={inputClass} />
       </div>
-      <textarea id="wd-description" defaultValue="The assignment is available online Submit a link to the landing page of your Web application running on Vercel." className={inputClass + " mb-4 h-48"} />
+      <textarea id="wd-description" defaultValue={assignment.description} className={inputClass + " mb-4 h-48"} />
       <div className={rowClass}>
         <label className={labelClass} htmlFor="wd-points">Points</label>
         <div className="min-w-0 flex-1">
-          <input id="wd-points" defaultValue={100} className={inputClass} />
+          <input id="wd-points" defaultValue={assignment.points} className={inputClass} />
         </div>
       </div>
       <div className={rowClass}>
         <label className={labelClass} htmlFor="wd-group">Assignment Group</label>
         <div className="min-w-0 flex-1">
-          <select id="wd-group" defaultValue="ASSIGNMENTS" className={inputClass}>
+          <select id="wd-group" defaultValue={assignment.group} className={inputClass}>
             <option value="ASSIGNMENTS">ASSIGNMENTS</option>
             <option value="QUIZZES">QUIZZES</option>
             <option value="EXAMS">EXAMS</option>
@@ -87,19 +91,19 @@ export default async function AssignmentEditor({
           </div>
           <div className="mb-3">
             <label htmlFor="wd-due-date" className="mb-1 block text-sm font-semibold">Due</label>
-            <input type="date" id="wd-due-date" defaultValue="2025-05-13" className={inputClass} />
+            <input type="date" id="wd-due-date" defaultValue={assignment.dueDate} className={inputClass} />
           </div>
           <div className="flex gap-3">
             <div className="flex-1">
               <div className="mb-3">
                 <label htmlFor="wd-available-from" className="mb-1 block text-sm font-semibold">Available from</label>
-                <input type="date" id="wd-available-from" defaultValue="2025-05-06" className={inputClass} />
+                <input type="date" id="wd-available-from" defaultValue={assignment.availableFrom} className={inputClass} />
               </div>
             </div>
             <div className="flex-1">
               <div className="mb-3">
                 <label htmlFor="wd-available-until" className="mb-1 block text-sm font-semibold">Until</label>
-                <input type="date" id="wd-available-until" defaultValue="2025-05-20" className={inputClass} />
+                <input type="date" id="wd-available-until" defaultValue={assignment.availableUntil} className={inputClass} />
               </div>
             </div>
           </div>

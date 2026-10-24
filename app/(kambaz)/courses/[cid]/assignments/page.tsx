@@ -1,5 +1,6 @@
 import { FaPlus, FaSearch } from "react-icons/fa";
 import AssignmentItem from "./AssignmentItem";
+import { getAssignments, assignmentDetails } from "../../../database";
 export default async function Assignments({
   params,
 }: {
@@ -23,26 +24,15 @@ export default async function Assignments({
         <button type="button" className="rounded border border-neutral-300 bg-white px-2 py-0.5 text-sm"><FaPlus /></button>
       </h3>
       <ul id="wd-assignment-list" className="m-0 list-none p-0">
-        <AssignmentItem
-          cid={cid}
-          aid="A1"
-          title="A1 - ENV + HTML"
-          details="Multiple Modules | Not available until May 6 at 12:00am | Due May 13 at 11:59pm | 100 pts"
-        />
-        <AssignmentItem
-          cid={cid}
-          aid="A2"
-          title="A2 - CSS + TAILWIND"
-          details="Multiple Modules | Not available until May 13 at 12:00am | Due May 20 at 11:59pm | 100 pts"
-        />
-        <AssignmentItem
-          cid={cid}
-          aid="A3"
-          title="A3 - JAVASCRIPT + REACT"
-          details="Multiple Modules | Not available until May 20 at 12:00am | Due May 27 at 11:59pm | 100 pts"
-        />
-        <AssignmentItem cid={cid} aid="a4" title="A4 - GEN Z SLANGS + JAVA" details="Multiple Modules | Not available until May 27 at 12:00am | Due Jun 3 at 11:59pm | 100 pts" />
-        <AssignmentItem cid={cid} aid="ai-a" title="A9 - Sample assignment" details="Multiple Modules | Not available until Jun 3 at 12:00am | Due Jun 10 at 11:59pm | 100 pts" />
+        {getAssignments(cid).map((assignment) => (
+          <AssignmentItem
+            key={assignment._id}
+            cid={cid}
+            aid={assignment._id}
+            title={assignment.title}
+            details={assignmentDetails(assignment)}
+          />
+        ))}
       </ul>
     </div>
   );
