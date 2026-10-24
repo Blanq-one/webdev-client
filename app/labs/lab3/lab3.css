@@ -1,15 +1,17 @@
-.wd-bg-red { background-color: red; }
-.wd-bg-blue { background-color: blue; }
-.wd-bg-green { background-color: green; }
-.wd-bg-purple { background-color: purple; }
-.wd-bg-orange { background-color: orange; }
+.bg-red { background-color: red; }
+.bg-blue { background-color: blue; }
+.bg-green { background-color: green; }
+.bg-orange { background-color: orange; }
+.bg-purple { background-color: purple; }
+.bg-gray { background-color: gray; }
 .bg-gold { background-color: gold; }
 .wd-box {
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
   margin: 4px;
-  color: white;
+  box-sizing: border-box;
+  color: black;
   text-align: center;
-  line-height: 60px;
 }

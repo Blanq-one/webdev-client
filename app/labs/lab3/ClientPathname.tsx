@@ -5,8 +5,8 @@ export default function ClientPathname() {
   const pathname = usePathname();
   return (
     <div id="wd-client-component">
-      <p>Pathname: {pathname}</p>
-      <p>Pathname length: {pathname.length}</p>
+      <p>{`Pathname: ${pathname}`}</p>
+      <p>{`Pathname length: ${pathname.length}`}</p>
     </div>
   );
 }

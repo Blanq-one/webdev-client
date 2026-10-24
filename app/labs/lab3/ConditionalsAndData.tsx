@@ -42,7 +42,7 @@ export default function ConditionalsAndData() {
 
       <h3>Inline Conditional (3.2.5)</h3>
       <p>{user ? "Welcome back" : "Guest Inline"}</p>
-      <p>nullValue ?? &quot;default&quot; =&gt; {nullValue ?? "default"}</p>
+      <p>{`nullValue ?? "default" => ${nullValue ?? "default"}`}</p>
 
       <h3>JSON.stringify (3.4.1)</h3>
       <pre>{JSON.stringify(sampleObject, null, 2)}</pre>
@@ -57,7 +57,7 @@ export default function ConditionalsAndData() {
       <p>{house.owners.join(", ")}</p>
 
       <h3>Optional Chaining (3.4.3)</h3>
-      <p>house.garage?.cars ?? 0 =&gt; {house.garage?.cars ?? 0}</p>
+      <p>{`house.garage?.cars ?? 0 => ${house.garage?.cars ?? 0}`}</p>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import "./lab3.css";
 
 const bgGreen = { backgroundColor: "green" };
+const flag = true;
 
 export default function Styles() {
   return (
@@ -15,12 +16,12 @@ export default function Styles() {
 
       <h3>CSS Classes (3.6.2)</h3>
       <div>
-        <span className="wd-box wd-bg-red">1</span>
-        <span className="wd-box wd-bg-blue">2</span>
-        <span className="wd-box wd-bg-green">3</span>
-        <span className="wd-box wd-bg-purple">4</span>
-        <span className="wd-box wd-bg-orange">5</span>
-        <span className="wd-box bg-gold">6</span>
+        <div className="wd-box bg-red">Red</div>
+        <div className="wd-box bg-blue">Blue</div>
+        <div className="wd-box bg-green">Green</div>
+        <div className="wd-box bg-orange">Orange</div>
+        <div className={flag ? "wd-box bg-purple" : "wd-box bg-gray"}>Purple</div>
+        <div className={flag ? "wd-box bg-gold" : "wd-box bg-gray"}>Gold</div>
       </div>
     </div>
   );

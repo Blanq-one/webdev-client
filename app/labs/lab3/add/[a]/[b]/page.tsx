@@ -6,7 +6,7 @@ export default async function AddPathParameters({
     <div id="wd-add-path-parameters">
       <h2>Add Path Parameters</h2>
       <h3>
-        {a} + {b} = {Number(a) + Number(b)}
+        {`${a} + ${b} = ${Number(a) + Number(b)}`}
       </h3>
     </div>
   );

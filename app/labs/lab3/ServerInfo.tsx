@@ -1,5 +1,4 @@
-﻿import fs from "fs";
-import os from "os";
+import fs from "fs";
 import path from "path";
 
 export default function ServerInfo() {
@@ -13,11 +12,7 @@ export default function ServerInfo() {
         ))}
       </ul>
       <h3>Server Information (3.7.4)</h3>
-      <ul>
-        <li>platform: {os.platform()}</li>
-        <li>arch: {os.arch()}</li>
-        <li>cwd: {process.cwd() ? "available" : "unavailable"}</li>
-      </ul>
+      <pre>{JSON.stringify({ arch: process.arch, platform: process.platform, node: process.version }, null, 2)}</pre>
     </div>
   );
 }
