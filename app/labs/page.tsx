@@ -9,7 +9,7 @@ export default function Labs() {
           href="https://github.com/Blanq-one/webdev-client"
           id="wd-github"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           GitHub repository
         </a>
