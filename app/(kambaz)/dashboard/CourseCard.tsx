@@ -1,13 +1,16 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function CourseCard({
-  id, title, subtitle, image,
+  id, title, subtitle, image, onEdit, onDelete,
 }: {
   id: string;
   title: string;
   subtitle: string;
   image: string;
+  onEdit: () => void;
+  onDelete: () => void;
 }) {
   return (
     <div className="wd-dashboard-course w-[300px] max-w-full overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-sm">
@@ -34,6 +37,30 @@ export default function CourseCard({
             className="inline-flex items-center justify-center rounded bg-blue-600 px-3 py-1.5 text-sm font-medium text-white"
           >
             Go
+          </button>
+          <button
+            type="button"
+            id="wd-edit-course-click"
+            className="ms-2 inline-flex items-center justify-center rounded bg-yellow-500 px-3 py-1.5 text-sm font-medium text-black"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onEdit();
+            }}
+          >
+            Edit
+          </button>
+          <button
+            type="button"
+            id="wd-delete-course-click"
+            className="ms-2 inline-flex items-center justify-center rounded bg-red-600 px-3 py-1.5 text-sm font-medium text-white"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              onDelete();
+            }}
+          >
+            Delete
           </button>
         </div>
       </Link>
