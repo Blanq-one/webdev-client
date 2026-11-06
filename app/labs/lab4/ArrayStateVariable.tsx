@@ -4,7 +4,7 @@ export default function ArrayStateVariable() {
   const [array, setArray] = useState(["Apples", "Bananas", "Cherries"]);
   const [item, setItem] = useState("");
   return (
-    <div id="wd-array-state-variables">
+    <div id="wd-array-state">
       <h3>Array State Variable</h3>
       <input id="wd-array-input" value={item} onChange={(e) => setItem(e.target.value)} />
       <button
@@ -15,7 +15,7 @@ export default function ArrayStateVariable() {
           setItem("");
         }}
       >
-        Add Element
+        Add
       </button>
       <ul>
         {array.map((element, index) => (
